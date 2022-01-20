@@ -1,0 +1,246 @@
+:root {
+  --fs-400: 0.75rem;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: var(--fs-400vw);
+  color: black;
+  font-family: "Syncopate", sans-serif;
+  line-height: 1;
+}
+
+.mpx__widget--container {
+  -webkit-box-shadow: 0px 0px 5px 0px #888888;
+          box-shadow: 0px 0px 5px 0px #888888;
+  padding: 1rem;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 85%;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  z-index: 5;
+  background-color: white;
+}
+
+.mpx__widget--container .mpx__widget__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.85rem;
+}
+
+.mpx__widget--container .mpx__widget__header h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #777777;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.mpx__widget--container .mpx__widget__header .mpx__widget__header__line {
+  position: relative;
+  border-bottom: 2px solid;
+  width: 100%;
+  margin-left: 0.35rem;
+  bottom: 4.5px;
+  border-bottom-color: rgba(211, 211, 211, 0.384);
+}
+
+.mpx__widget--container .mpx__widget__header .mpx__widget__header__line .mpx__widget__header__close {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.mpx__widget--container .mpx__widget__header .mpx__widget__header__line .mpx__widget__header__close::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 8px;
+  height: 1px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: #8f8f8f;
+  border: 1px solid #8f8f8f;
+}
+
+.mpx__widget--container .mpx__widget__header .mpx__widget__header__line .mpx__widget__header__close::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 8px;
+  height: 1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background: #8f8f8f;
+  border: 1px solid #8f8f8f;
+}
+
+.mpx__widget--container .mpx__widget__content--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mpx__widget--container .mpx__widget__content--container .mpx__widget__content__calendar--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 0.8rem;
+}
+
+.mpx__widget--container .mpx__widget__content--container .mpx__widget__content__calendar--container .mpx__widget__content__calendar__top {
+  padding: 0.85rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #c6c6c6;
+  background: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.mpx__widget--container .mpx__widget__content--container .mpx__widget__content__calendar--container .mpx__widget__content__calendar__bottom {
+  padding: 0.25rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fafafa;
+  background: #bcbcbc;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  height: 80%;
+}
+
+.mpx__widget--container .mpx__widget__content--container .mpx__widget__content__img {
+  margin-right: 0.8rem;
+}
+
+.mpx__widget--container .mpx__widget__content--container .mpx__widget__content__img a img {
+  max-width: 140px;
+  width: 100%;
+  height: 100%;
+}
+
+.mpx__widget--container .mpx__widget__content--container .mpx__widget__content__text--container {
+  margin-right: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  max-width: 100%;
+}
+
+.mpx__widget--container .mpx__widget__content--container .mpx__widget__content__text--container .mpx__widget__content__text__main a {
+  color: #777777;
+  font-weight: bold;
+}
+
+.mpx__widget--container .mpx__widget__content--container .mpx__widget__content__text--container .mpx__widget__content__text__main a p {
+  margin-bottom: 0.5rem;
+}
+
+.mpx__widget--container .mpx__widget__content--container .mpx__widget__content__text--container .mpx__widget__content__text__author p {
+  color: #a5a5a5;
+}
+
+.mpx__widget--container .mpx__widget__content--container .mpx__widget__content__text--container .mpx__widget__content__text__author p span {
+  color: #c4c4c4;
+}
+
+@media only screen and (min-width: 600px) {
+  .mpx__widget--container {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mpx__widget--container {
+    max-width: 60%;
+  }
+  .mpx__widget--container .mpx__widget__header h1 {
+    font-size: 15px;
+  }
+  .mpx__widget--container .mpx__widget__content--container .mpx__widget__content__img a img {
+    min-height: 85px;
+    max-width: 85px;
+  }
+  .mpx__widget--container .mpx__widget__content--container .mpx__widget__content__text--container .mpx__widget__content__text__main a {
+    font-size: 1.25rem;
+  }
+  .mpx__widget--container .mpx__widget__content--container .mpx__widget__content__text--container .mpx__widget__content__text__author p {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mpx__widget--container {
+    max-width: 40%;
+  }
+  .mpx__widget--container .mpx__widget__header h1 {
+    font-size: 20px;
+  }
+  .mpx__widget--container .mpx__widget__content--container .mpx__widget__content__img a img {
+    min-height: 100px;
+    max-width: 100px;
+  }
+  .mpx__widget--container .mpx__widget__content--container .mpx__widget__content__text--container .mpx__widget__content__text__main a {
+    font-size: 1.5rem;
+  }
+  .mpx__widget--container .mpx__widget__content--container .mpx__widget__content__text--container .mpx__widget__content__text__author p {
+    font-size: 1.5rem;
+  }
+}

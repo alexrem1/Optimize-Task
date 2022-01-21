@@ -33,3 +33,26 @@ try {
 } catch (error) {
   console.log(error);
 }
+
+//add event to analytics
+document
+  .querySelector(".mpx__widget__content__text__main>a")
+  .addEventListener("click", function () {
+    dataLayer.push({
+      event: "ga_event",
+      category: "optimize",
+      action: "view blog",
+      label: "cta",
+    });
+  });
+
+document
+  .querySelector(".mpx__widget__content__img>a")
+  .addEventListener("click", function () {
+    dataLayer.push({
+      event: "ga_event",
+      category: "optimize",
+      action: "view blog",
+      label: "cta",
+    });
+  });
